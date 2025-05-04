@@ -11,3 +11,6 @@ After launching 5G in May 2022, the company saw a drop in active users and slowe
 - Uncover trends and patterns in user behavior post-5G launch.
 - Evaluate the effectiveness of current internet plans.
 - Suggest data-driven strategies to recover user engagement and improve revenue.
+
+## Database Schema
+![](https://github.com/Shandeep-Raula/Post-5G-Performance-Insights-and-KPI-Analysis/blob/main/Figure/Data%20Model.png)
