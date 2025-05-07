@@ -17,4 +17,78 @@ SELECT city_code, ms_pct
 FROM fact_market_share
 WHERE company = 'Atliqo';
 
--- 
+-- Compare average ARPU before and after 5G implementation.
+SELECT d.before_after_5g, ROUND(AVG(f.arpu),2) AS avg_arpu
+FROM fact_atliqo_metrics f
+JOIN dim_date d ON f.date = d.date
+GROUP BY d.before_after_5g;
+
+-- Find the top 5 cities with the highest total revenue for Atliqo.
+SELECT c.city_name, SUM(f.atliqo_revenue_crores) AS total_revenue_crores
+FROM fact_atliqo_metrics f
+JOIN dim_cities c ON f.city_code = c.city_code
+GROUP BY c.city_name
+ORDER BY total_revenue DESC
+LIMIT 5;
+
+-- What is the revenue distribution by plan type?
+SELECT p.plan, SUM(pr.plan_revenue_crores) AS revenue_crores
+FROM fact_plan_revenue pr
+JOIN dim_plan p ON pr.plans = p.plan
+GROUP BY p.plan
+ORDER BY revenue_crores DESC;
+
+-- Check churn rate per month (Unsubscribed / Active Users)
+SELECT date,
+       ROUND(SUM(unsubscribed_users_lakhs) * 100 / NULLIF(SUM(active_users_lakhs), 0),2) AS churn_rate
+FROM fact_atliqo_metrics
+GROUP BY date
+ORDER BY date;
+
+
+-- Find the city with the lowest market share for Atliqo after 5G implementation.
+SELECT f.city_code, c.city_name, AVG(f.ms_pct) AS avg_market_share
+FROM fact_market_share f
+JOIN dim_date d ON f.date = d.date
+JOIN dim_cities c ON f.city_code = c.city_code
+WHERE f.company = 'Atliqo' AND d.before_after_5g = 'After 5G'
+GROUP BY f.city_code, c.city_name
+ORDER BY avg_market_share ASC
+LIMIT 1;
+
+-- Time period comparison: Revenue before vs after 5G for each city.
+SELECT c.city_name,
+       SUM(CASE WHEN d.before_after_5g = 'Before 5G' THEN f.atliqo_revenue_crores ELSE 0 END) AS before_5g_revenue_crores,
+       SUM(CASE WHEN d.before_after_5g = 'After 5G' THEN f.atliqo_revenue_crores ELSE 0 END) AS after_5g_revenue_crores
+FROM fact_atliqo_metrics f
+JOIN dim_date d ON f.date = d.date
+JOIN dim_cities c ON f.city_code = c.city_code
+GROUP BY c.city_name;
+
+-- Which internet plan saw the highest growth in revenue post 5G?
+SELECT plans,
+       SUM(CASE WHEN d.before_after_5g = 'Before 5G' THEN plan_revenue_crores ELSE 0 END) AS revenue_before,
+       SUM(CASE WHEN d.before_after_5g = 'After 5G' THEN plan_revenue_crores ELSE 0 END) AS revenue_after,
+       SUM(CASE WHEN d.before_after_5g = 'After 5G' THEN plan_revenue_crores ELSE 0 END) -
+       SUM(CASE WHEN d.before_after_5g = 'Before 5G' THEN plan_revenue_crores ELSE 0 END) AS revenue_growth
+FROM fact_plan_revenue pr
+JOIN dim_date d ON pr.date = d.date
+GROUP BY plans
+ORDER BY revenue_growth DESC;
+
+-- Find the overall ARPU trend before and after 5G grouped by time period.
+SELECT time_period, before_after_5g, AVG(arpu) AS avg_arpu
+FROM fact_atliqo_metrics f
+JOIN dim_date d ON f.date = d.date
+GROUP BY time_period, before_after_5g
+ORDER BY time_period;
+
+-- Evaluate the impact of 5G on market share of all companies.
+SELECT 
+    company,
+    ROUND(AVG(CASE WHEN d.before_after_5g = 'Before 5G' THEN ms_pct END), 2) AS avg_ms_before_5g,
+    ROUND(AVG(CASE WHEN d.before_after_5g = 'After 5G' THEN ms_pct END), 2) AS avg_ms_after_5g
+FROM fact_market_share f
+JOIN dim_date d ON f.date = d.date
+GROUP BY company
+ORDER BY company;
