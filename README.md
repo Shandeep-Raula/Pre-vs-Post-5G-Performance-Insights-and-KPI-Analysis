@@ -33,3 +33,8 @@ After launching 5G in May 2022, the company saw a drop in active users and slowe
 | Active Users After 5G        | –         | Total active users for all periods after 5G implementation        |
 | Unsubscribed Users Before 5G | –         | Total unsubscribed users for all periods before 5G implementation |
 | Unsubscribed Users After 5G  | –         | Total unsubscribed users for all periods after 5G implementation  |
+
+## Tools 
+- SQL(PostgreSQL)
+- Python For EDA 
+
