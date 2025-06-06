@@ -35,6 +35,6 @@ After launching 5G in May 2022, the company saw a drop in active users and slowe
 | Unsubscribed Users After 5G  | –         | Total unsubscribed users for all periods after 5G implementation  |
 
 ## Tools 
-- SQL(PostgreSQL)
+- SQL (PostgreSQL)
 - Python For EDA 
 
