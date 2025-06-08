@@ -36,5 +36,8 @@ After launching 5G in May 2022, the company saw a drop in active users and slowe
 
 ## Tools 
 - SQL (PostgreSQL)
-- Python For EDA 
+- Python For EDA
+```
+pip install numpy pandas matplotlib seaborn plotly 
+```
 
