@@ -1,0 +1,32 @@
+[
+  {
+    "p_rel_url": "Shandeep-Raula/Pre-vs-Post-5G-Performance-Insights-and-KPI-Analysis/refs/heads/main/Dataset/dim_cities.csv",
+    "p_sink_folder": "dim_cities",
+    "p_sink_file": "dim_cities.csv"
+  },
+  {
+    "p_rel_url": "Shandeep-Raula/Pre-vs-Post-5G-Performance-Insights-and-KPI-Analysis/refs/heads/main/Dataset/dim_date.csv",
+    "p_sink_folder": "dim_date",
+    "p_sink_file": "dim_date.csv"
+  },
+  {
+    "p_rel_url": "Shandeep-Raula/Pre-vs-Post-5G-Performance-Insights-and-KPI-Analysis/refs/heads/main/Dataset/dim_plan.csv",
+    "p_sink_folder": "dim_plan",
+    "p_sink_file": "dim_plan.csv"
+  },
+  {
+    "p_rel_url": "Shandeep-Raula/Pre-vs-Post-5G-Performance-Insights-and-KPI-Analysis/refs/heads/main/Dataset/fact_atliqo_metrics.csv",
+    "p_sink_folder": "fact_atliqo_metrics",
+    "p_sink_file": "fact_atliqo_metrics.csv"
+  },
+  {
+    "p_rel_url": "Shandeep-Raula/Pre-vs-Post-5G-Performance-Insights-and-KPI-Analysis/refs/heads/main/Dataset/fact_market_share.csv",
+    "p_sink_folder": "fact_market_share",
+    "p_sink_file": "fact_market_share.csv"
+  },
+  {
+    "p_rel_url": "Shandeep-Raula/Pre-vs-Post-5G-Performance-Insights-and-KPI-Analysis/refs/heads/main/Dataset/fact_plan_revenue.csv",
+    "p_sink_folder": "fact_plan_revenue",
+    "p_sink_file": "fact_plan_revenue.csv"
+  }
+]
