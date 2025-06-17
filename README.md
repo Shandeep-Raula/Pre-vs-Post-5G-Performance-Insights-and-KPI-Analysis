@@ -42,3 +42,26 @@ After launching 5G in May 2022, the company saw a drop in active users and slowe
 pip install numpy pandas matplotlib seaborn plotly 
 ```
 
+## Insights Deep-Dive 
+
+#### 📊 Unsubscribed Users Insights (in Lakhs) by City & Month
+![](https://github.com/Shandeep-Raula/Pre-vs-Post-5G-Performance-Insights-and-KPI-Analysis/blob/main/Figure/Unsubscribed%20Users%20(in%20Lakhs)%20by%20City%20%26%20Month.png)
+
+This analysis summarizes unsubscribe trends across major Indian cities from January to September 2022.
+- 📍 **Delhi** consistently has **high unsubscribe rates**, peaking in:
+  - **March 2022**: `2.52 lakhs`
+  - **August 2022**: `2.37 lakhs`
+
+- 🔺 **Jaipur** recorded the **highest overall peak**:
+  - **August 2022**: `3.57 lakhs` unsubscribed users
+
+- 🌆 **Kolkata** and **Mumbai** exhibit multiple spikes:
+  - **Mumbai (April 2022)**: `2.64 lakhs`
+  - Notable activity across **mid-2022**
+
+- 🟢 **Chandigarh**, **Raipur**, and **Pune** consistently show **lower unsubscribe numbers** throughout the period.
+
+- 📈 **Most spikes occurred from mid to late 2022**, possibly driven by:
+  - Seasonal churn
+  - Marketing campaign changes
+  - Service-related issues
