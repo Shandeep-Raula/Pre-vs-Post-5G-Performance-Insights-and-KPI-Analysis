@@ -65,3 +65,39 @@ This analysis summarizes unsubscribe trends across major Indian cities from Janu
   - Seasonal churn
   - Marketing campaign changes
   - Service-related issues
+
+# 💰 ARPU Analysis by City (Atliqo Telecom)
+
+The following analysis showcases the top and bottom 5 cities based on **ARPU (Average Revenue Per User)**.
+
+---
+
+#### 🔝 Top 5 Cities with Highest ARPU
+
+| Rank | City        | ARPU (₹) |
+|------|-------------|----------|
+| 1️⃣   | Mumbai      | 213.875  |
+| 2️⃣   | Patna       | 212.000  |
+| 3️⃣   | Lucknow     | 211.375  |
+| 4️⃣   | Coimbatore  | 208.250  |
+| 5️⃣   | Hyderabad   | 206.875  |
+
+---
+
+#### 🏡 Bottom 5 Cities with Lowest ARPU
+
+| Rank | City        | ARPU (₹) |
+|------|-------------|----------|
+| 1️⃣   | Pune        | 187.125  |
+| 2️⃣   | Kolkata     | 188.375  |
+| 3️⃣   | Chandigarh  | 191.625  |
+| 4️⃣   | Bangalore   | 191.875  |
+| 5️⃣   | Ahmedabad   | 195.500  |
+
+- **Mumbai** has the highest ARPU at ₹213.88.
+- **Patna** and **Lucknow** also have high ARPU, showing strong user value in Tier-2 cities.
+- **Coimbatore** and **Hyderabad** are also in the top 5.
+- **Pune** has the lowest ARPU at ₹187.13.
+- **Kolkata**, **Chandigarh**, **Bangalore**, and **Ahmedabad** also have low ARPU.
+- The ARPU gap between top and bottom cities is over ₹26.
+- Some big cities like **Bangalore** and **Ahmedabad** are in the bottom 5, showing that being a metro doesn't always mean higher revenue per user.
