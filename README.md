@@ -66,13 +66,10 @@ This analysis summarizes unsubscribe trends across major Indian cities from Janu
   - Marketing campaign changes
   - Service-related issues
 
-# 💰 ARPU Analysis by City (Atliqo Telecom)
+#### 💰 ARPU Analysis by City (Atliqo Telecom)
 
 The following analysis showcases the top and bottom 5 cities based on **ARPU (Average Revenue Per User)**.
-
----
-
-#### 🔝 Top 5 Cities with Highest ARPU
+##### 🔝 Top 5 Cities with Highest ARPU
 
 | Rank | City        | ARPU (₹) |
 |------|-------------|----------|
@@ -84,7 +81,7 @@ The following analysis showcases the top and bottom 5 cities based on **ARPU (Av
 
 ---
 
-#### 🏡 Bottom 5 Cities with Lowest ARPU
+##### 🏡 Bottom 5 Cities with Lowest ARPU
 
 | Rank | City        | ARPU (₹) |
 |------|-------------|----------|
