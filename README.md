@@ -44,7 +44,7 @@ pip install numpy pandas matplotlib seaborn plotly
 
 ## Insights Deep-Dive 
 
-#### 📊 Unsubscribed Users Insights (in Lakhs) by City & Month
+### 📊 Unsubscribed Users Insights (in Lakhs) by City & Month
 ![](https://github.com/Shandeep-Raula/Pre-vs-Post-5G-Performance-Insights-and-KPI-Analysis/blob/main/Figure/Unsubscribed%20Users%20(in%20Lakhs)%20by%20City%20%26%20Month.png)
 
 This analysis summarizes unsubscribe trends across major Indian cities from January to September 2022.
@@ -66,10 +66,10 @@ This analysis summarizes unsubscribe trends across major Indian cities from Janu
   - Marketing campaign changes
   - Service-related issues
 
-#### 💰 ARPU Analysis by City (Atliqo Telecom)
+### 💰 ARPU Analysis by City (Atliqo Telecom)
 
 The following analysis showcases the top and bottom 5 cities based on **ARPU (Average Revenue Per User)**.
-##### 🔝 Top 5 Cities with Highest ARPU
+#### 🔝 Top 5 Cities with Highest ARPU
 
 | Rank | City        | ARPU (₹) |
 |------|-------------|----------|
@@ -81,7 +81,7 @@ The following analysis showcases the top and bottom 5 cities based on **ARPU (Av
 
 ---
 
-##### 🏡 Bottom 5 Cities with Lowest ARPU
+#### 🏡 Bottom 5 Cities with Lowest ARPU
 
 | Rank | City        | ARPU (₹) |
 |------|-------------|----------|
@@ -99,7 +99,7 @@ The following analysis showcases the top and bottom 5 cities based on **ARPU (Av
 - The ARPU gap between top and bottom cities is over ₹26.
 - Some big cities like **Bangalore** and **Ahmedabad** are in the bottom 5, showing that being a metro doesn't always mean higher revenue per user.
 
-## 📈 Market Share by Competitor
+### 📈 Market Share by Competitor
 ![](https://github.com/Shandeep-Raula/Pre-vs-Post-5G-Performance-Insights-and-KPI-Analysis/blob/main/Figure/competitor%20holds%20the%20highest%20market%20share.png)
 - **PIO** holds the highest market share: **35.4%**
 - **Britel** is the second-largest player: **27.5%**
