@@ -98,3 +98,13 @@ The following analysis showcases the top and bottom 5 cities based on **ARPU (Av
 - **Kolkata**, **Chandigarh**, **Bangalore**, and **Ahmedabad** also have low ARPU.
 - The ARPU gap between top and bottom cities is over ₹26.
 - Some big cities like **Bangalore** and **Ahmedabad** are in the bottom 5, showing that being a metro doesn't always mean higher revenue per user.
+
+## 📈 Market Share by Competitor
+![](https://github.com/Shandeep-Raula/Pre-vs-Post-5G-Performance-Insights-and-KPI-Analysis/blob/main/Figure/competitor%20holds%20the%20highest%20market%20share.png)
+- **PIO** holds the highest market share: **35.4%**
+- **Britel** is the second-largest player: **27.5%**
+- **Atliq** holds a decent share: **19.6%**
+- **DADAFONE** has a smaller portion: **10.3%**
+- **Others** collectively account for: **7.2%**
+- PIO and Britel together dominate the market with over **60% share**, while Atliq may need to focus on competitive strategies to increase its presence.
+
